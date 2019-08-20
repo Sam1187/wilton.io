@@ -1,0 +1,129 @@
+.decorate {
+    margin-bottom: 70px;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        position: relative;
+        margin-right: 17px;
+        width: 1076px;
+    }
+
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 16px 27px;
+        width: 100%;
+        font-size: 30px;
+        text-transform: uppercase;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            opacity: 0.5;
+        }
+
+        span {
+            z-index: 1;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 17px;
+        position: relative;
+
+        &--bottom {
+            margin-top: 13px;
+        }
+    }
+    &__item:nth-child(even) {
+        margin-right: 0;
+    }
+
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+        z-index: 1;
+
+        &--white {
+            color: #fff;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-yanone-regular;
+
+        &--white {
+            color: #fff;
+        }
+    }
+
+    &__itemdesc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px; 
+        font-size: 30px;
+
+        &--whitebg {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background-color: #fff;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__button {
+        padding: 7px 12px;
+        font-size: 11px;
+        z-index: 1;
+    }
+    
+}
+
+@media all and (max-width: 768px) {
+    .decorate {
+        padding: 0 10px;
+
+        &__main {
+            display: block;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__item {
+            width: 50%;
+            margin-left: 0;
+        }
+    }
+}
