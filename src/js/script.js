@@ -35,15 +35,21 @@ $(document).ready(function(){
       $('body').toggleClass('no-scroll');
   });
 
-  closeBtn.on('click', function() {
-      navList.removeClass('is-active');
-  });
+  function navClick(target, className) {
+    target.on('click', function() {
+      className.removeClass('is-active');
+      $('body').toggleClass('no-scroll');
+    });
+  };
 
-  navList.on('click', function(e){
-    if(e.target.className === 'header__list js-nav-list is-active') {
-      navList.removeClass('is-active');
-    }
-  })
+  navClick(closeBtn, navList);
+  navClick(navList, navList);
+
+  // navList.on('click', function(e){
+  //   if(e.target.className === 'header__list js-nav-list is-active') {
+  //     navList.removeClass('is-active');
+  //   }
+  // })
 
    // mobile footer
    var footerBtn = $('.js-footer-btn');
@@ -66,3 +72,4 @@ $(document).ready(function(){
     anchorClick('.ideas-a', '#ideas');
     anchorClick('.education-a', '#education');
     anchorClick('.shop-a', '#shop');  
+    anchorClick('.top-a', '#top');

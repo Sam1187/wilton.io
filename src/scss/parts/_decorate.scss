@@ -130,6 +130,10 @@
             justify-content: space-around;
         }
 
+        &__item {
+            margin-right: 0;
+        }
+
         &__item--bottom {
             margin-top: 0;
         }
