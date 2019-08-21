@@ -54,3 +54,15 @@ $(document).ready(function(){
        footerList.toggleClass('is-active');
        footerMedia.toggleClass('is-active');
    });
+
+   // Smooth scroll
+  function anchorClick (anchor, id) {
+    $(anchor).click(function(){
+        $('html, body').animate({scrollTop:$(id).position().top}, 1000);
+ })
+};
+
+    anchorClick('.recipes-a', '#recipes');
+    anchorClick('.ideas-a', '#ideas');
+    anchorClick('.education-a', '#education');
+    anchorClick('.shop-a', '#shop');  

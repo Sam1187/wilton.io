@@ -108,22 +108,22 @@
                     <ul class="header__list js-nav-list">
                         <li class="header__item">
                             <a href="#" class="media__close js-cls-btn">x</a>
-                            <a href="#recipes" class='header__links'>
+                            <a href="#recipes" class='header__links recipes-a'>
                                 recipes
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="#ideas" class='header__links'>
+                            <a href="#ideas" class='header__links ideas-a'>
                                 decorating ideas
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="#education" class='header__links'>
+                            <a href="#education" class='header__links education-a'>
                                 education
                             </a>
                         </li>
                         <li class="header__item">
-                            <a href="#shop" class='header__links'>
+                            <a href="#shop" class='header__links shop-a'>
                                 shop
                             </a>
                         </li>
@@ -196,7 +196,7 @@
     <!-- End Slider -->
 
     <!-- Project -->
-    <section class="project">
+    <section class="project" id="recipes">
         <div class="grid">
             <div class="project__top">
                 <h2>Project of the week</h2>
@@ -204,7 +204,7 @@
             </div>
 
             <div class="project__main">
-                <div class="project__left">
+                <div class="project__left wow fadeInLeft">
                     <div class="project__desc">
                         <div class="project__text">
                             <div class="project__title">
@@ -217,15 +217,12 @@
                             </div>
                         </div>
                         <a href="#" class="project__button button">View project</a>
-
-
-
                     </div>
                     <div class="project__img">
                         <img src="img/cakes-rose.jpg" alt="cakes-rose">
                     </div>
                 </div>
-                <div class="project__right">
+                <div class="project__right wow fadeInRight">
                     <div class="project__item project__item--first item">
                         <img src="img/gal-1-img-1.jpg" alt="golden color">
                         <div class="item__desc">
@@ -266,7 +263,7 @@
     <!-- End Project -->
 
     <!-- Decorate -->
-    <section class="decorate">
+    <section class="decorate" id="ideas">
         <div class="grid--min">
             <div class="decorate__top project__top">
                 <h2>What will you decorate today?</h2>
@@ -274,14 +271,17 @@
                         class="fa fa-angle-right"></i></a>
             </div>
             <div class="decorate__main">
-                <div class="decorate__left">
-                    <img src="img/gal-2-img-1.jpg" alt="cake">
-                    <div class="decorate__desc">
-                        <span>Cake</span>
-                        <a href="#" class="decorate__button button">View ideas</a>
+                <div class="decorate__left fadeInLeft wow">
+                    <div class="decorate__img">
+                            <img src="img/gal-2-img-1.jpg" alt="cake">
+                            <div class="decorate__desc">
+                                <span>Cake</span>
+                                <a href="#" class="decorate__button button">View ideas</a>
+                            </div>
                     </div>
+                    
                 </div>
-                <div class="decorate__right">
+                <div class="decorate__right wow fadeInRight">
                     <div class="decorate__item">
                         <img src="img/gal-2-img-2.jpg" alt="bouquet">
                         <div class="decorate__itemdesc">
@@ -333,9 +333,9 @@
     <!-- End Decorate -->
 
     <!-- Shop -->
-    <section class="shop">
+    <section class="shop" id="shop">
         <div class="grid--min">
-            <div class="shop__wrap">
+            <div class="shop__wrap wow fadeInUp">
                 <div class="shop__item">
                     <a href="#" class="shop__link shop__link--first">Shop Bakware <i class="fa fa-angle-right"></i></a>
                     <img src="img/gal-3-img-1.jpg" alt="bakware">
@@ -357,7 +357,7 @@
     <!-- End Shop -->
 
     <!-- Email -->
-    <section class="email">
+    <section class="email" id="education">
         <div class="grid">
             <div class="email__top">
                 <div class="email__title">
@@ -515,7 +515,7 @@
                         <p>Call 1-800-794-5866.</p>
                         <a href="#" class="footer__link">Other ways to contact us <i class="fa fa-angle-right"></i></a>
                     </div>
-                    <div class="footer__item">
+                    <div class="footer__item wow fadeInRight">
                         <h3>Stay connected</h3>
                         <ul class="footer__list">
                             <li>
