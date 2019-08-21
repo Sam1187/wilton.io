@@ -122,6 +122,10 @@
         }
     }
 
+    &__totop {
+        display: none;
+    }
+
     &__wrap {
         padding: 9px;
         text-align: center;
@@ -175,10 +179,32 @@
         &__plus {
             display: block;
             color: $color-icon;
+
+            &:hover {
+                transform: rotate(45deg);
+                transition: all 1s ease;
+            }
+            
         }
 
         &__useful.is-active {
             display: block;
+            transition: all 1s ease;
+        }
+
+        &__bottom {
+            position: relative;
+        }
+
+        &__totop {
+            display: block;
+            position: absolute;
+            top: -20px;
+            right: 0;
+        }
+
+        &__item--fourth {
+            margin-bottom: 20px;
         }
         
     }
