@@ -120,6 +120,10 @@
         &--envelope {
             background-color: #61279E;
         }
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     &__totop {
