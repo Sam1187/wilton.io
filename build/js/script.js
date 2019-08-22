@@ -45,11 +45,11 @@ $(document).ready(function(){
   navClick(closeBtn, navList);
   navClick(navList, navList);
 
-  // navList.on('click', function(e){
-  //   if(e.target.className === 'header__list js-nav-list is-active') {
-  //     navList.removeClass('is-active');
-  //   }
-  // })
+  navList.on('click', function(e){
+    if(e.target.className === 'header__list js-nav-list is-active') {
+      navList.removeClass('is-active');
+    }
+  })
 
    // mobile footer
    var footerBtn = $('.js-footer-btn');
